@@ -7,7 +7,7 @@ let score = 0;
 let isGameStart = false;
 
 gameStart.addEventListener("click",()=>{
-    isGameStart == true;
+    isGameStart = true;
     flyMosquito()
 })
 
@@ -19,7 +19,16 @@ function flyMosquito(){
         console.log(moveX,moveY);
         mosquito.style.top= `${moveX}px`;
         mosquito.style.left= `${moveY}px`;
-    },1000)
+    },1100)
+
+   setTimeout(()=>{
+    clearTimeout(time)
+    alert("Time up! Your Score is " + score)
+    score=0;
+    result.innerText = score;
+    isGameStart=false;
+   },30000)
+
 
 }
 
@@ -30,6 +39,8 @@ function getScore(){
 
 }
 
-mosquito.addEventListener('click',()=>{    
-   getScore()
+mosquito.addEventListener('click',()=>{ 
+    if(isGameStart){
+        getScore()
+    }   
 })
