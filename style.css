@@ -9,6 +9,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap:1rem;
+    flex-direction: column-reverse;
 }
 
 .playground{
@@ -20,6 +22,7 @@
 }
 
 .mosquito{
+    position: relative;
     height: 3.5rem;
     width: 3.5rem;
 }
@@ -28,4 +31,17 @@
    height: inherit;
    width: inherit;
    cursor:pointer;
+}
+
+.game_start{
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border:1px solid #1e1e1e;
+    color:#000;
+    cursor: pointer;
+}
+
+.game_start:active{
+   background-color: green;
+   color:#d3d3d3
 }
