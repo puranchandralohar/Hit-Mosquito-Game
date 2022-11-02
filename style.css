@@ -14,7 +14,18 @@
 .playground{
     height: 25rem;
     width: 50rem;
-    background-color: gray;
+    background-color: #d3d3d3;
     border:1rem inset #adadad;
-    box-shadow: 0.5rem 0.2rem 1rem #4e4e4e;
+    box-shadow: 0.2rem 0.5rem 1rem #4e4e4e;
+}
+
+.mosquito{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.mosquito img{
+   height: inherit;
+   width: inherit;
+   cursor:pointer;
 }
