@@ -45,3 +45,14 @@
    background-color: green;
    color:#d3d3d3
 }
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    align-items: center;
+}
+
+.controls span{
+    margin-left: 0.5rem;
+}
