@@ -7,8 +7,10 @@ let score = 0;
 let isGameStart = false;
 
 gameStart.addEventListener("click",()=>{
-    isGameStart = true;
-    flyMosquito()
+    if(!isGameStart){
+        isGameStart = true;
+        flyMosquito() 
+    }
 })
 
 
