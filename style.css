@@ -11,7 +11,7 @@
     justify-content: center;
     gap:1rem;
     color:#d3d3d3;
-    flex-direction: column-reverse;
+    flex-direction: column;
     background:url('./Image/bg.jpg');
     background-size: cover;
 }
@@ -64,4 +64,12 @@
 
 .controls span{
     margin-left: 0.5rem;
+}
+
+.game_info{
+    background-color: #141414;
+    padding: 0.5rem 1rem;
+}
+.game_info h3{
+    color:gold;
 }
